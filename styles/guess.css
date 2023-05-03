@@ -1,0 +1,21 @@
+body{
+	color:white;
+}
+
+.container{
+	text-align:center;
+	background-color:#593196;
+	width:1000px;
+	border-radius:10px
+}
+
+
+
+.lilacont{
+	background-color:#a991d4;
+	border-radius:10px
+}
+
+button{
+	border-radius:10px;
+}

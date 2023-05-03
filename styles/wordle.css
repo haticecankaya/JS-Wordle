@@ -1,0 +1,26 @@
+.container{
+	text-align:center;
+	}
+.containeritems{
+	display:flex;
+	margin:auto;
+	width:250px;
+	justify-content: space-between;
+}
+
+.wordleitem{
+	display:flex;
+	margin:auto;
+	width:37px;
+	height:37px;
+	color:black;
+}
+
+.letterstate button{
+	border-radius:10px;
+	background-color:lightgray;
+}
+
+.form-group{
+	display: none;
+}

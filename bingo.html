@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title>Bingo Oyunu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="styles/bingo.css">
+</head>
+<body>
+<!-- navbar start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Hatice Ç</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>                                   
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="wordle.html">Wordle
+           
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="calculator.html">Hesap Makinesi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="bingo.html">Bingo Oyunu
+			   <span class="visually-hidden">(current)</span>
+			  </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="guess.html">Sayı Tahmin Oyunu</a>
+        </li> 
+		<li class="nav-item">
+          <a class="nav-link" href="about.html">Hakkımda</a>
+        </li> 
+      </ul>
+	  </div>
+  </div>
+</nav>
+<!-- navbar finish -->
+<br>
+<main>
+<div class="container">
+	<h1>Bingo Oyunu</h1>
+	<br>
+	<button type="button" class="btn btn-danger" id="newgame"> Yeni Oyun Başlat</button>
+	<br> 
+	<br>
+	<br>
+	<div class="bingo-container">
+		<div class="bingo-items">
+			<h2>Oyuncu 1</h2>
+			<br><br>
+			<p id="onepuan">Oyuncu 1'in 0 tane sayısı çıktı</p>
+			<br><br>
+			<div>
+			<button type="button" class="btn btn-dark" id="one0" disabled>0</button>
+			<button type="button" class="btn btn-primary" id="one1" disabled>0</button>
+			<button type="button" class="btn btn-secondary" id="one2" disabled>0</button>
+			<button type="button" class="btn btn-success" id="one3" disabled>0</button>
+			<button type="button" class="btn btn-info" id="one4" disabled>0</button>
+			<button type="button" class="btn btn-warning" id="one5" disabled>0</button>
+			<button type="button" class="btn btn-danger" id="one6" disabled>0</button>
+			<button type="button" class="btn btn-primary" id="one7" disabled>0</button>
+			</div>
+		</div>
+		<div class="bingo-items">
+			<h2>Oyuncu 2</h2>
+			<br><br>
+			<p id="twopuan">Oyuncu 2'in 0 tane sayısı çıktı</p>
+			<br><br>
+			<div>
+			<button type="button" class="btn btn-dark" id="two0" disabled>0</button>	
+			<button type="button" class="btn btn-primary" id="two1" disabled>0</button>
+			<button type="button" class="btn btn-secondary" id="two2" disabled>0</button>
+			<button type="button" class="btn btn-success" id="two3" disabled>0</button>
+			<button type="button" class="btn btn-info"  id="two4" disabled>0</button>
+			<button type="button" class="btn btn-warning" id="two5" disabled>0</button>
+			<button type="button" class="btn btn-danger" id="two6" disabled>0</button>
+			<button type="button" class="btn btn-primary" id="two7" disabled>0</button>
+		</div>
+		</div>
+	</div>
+	<br><br>
+	<button type="button" class="btn btn-danger" id="newnumber"> Yeni Sayı</button>
+	<br><br>
+	<p id="result"></p>
+</div>
+</main>
+<script src="script/bingo.js"></script>
+</body>
+</html>

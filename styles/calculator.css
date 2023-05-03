@@ -1,0 +1,28 @@
+.container{
+	text-align:center;
+}
+
+.container-calculator{
+	display:flex;
+	margin:auto;
+}
+
+.calculator-items{
+	text-align:center;
+	display:flex;
+	margin:auto;
+}
+
+.form-group{
+	margin-left:10px;
+}
+
+#calculator-result{
+	font-size:25px;
+}
+
+#calculator-label{
+	font-size:30px;
+	
+}
+

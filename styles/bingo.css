@@ -1,0 +1,15 @@
+.container{
+	text-align:center;
+}
+
+.bingo-container{
+	display:flex;
+	margin:auto;
+	width:1000px;
+}
+
+.bingo-items{
+	text-align:center;
+	margin:auto;
+	
+}

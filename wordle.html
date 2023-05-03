@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title>Wordle</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="styles/wordle.css">
+</head>
+<body>
+<!-- navbar start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Hatice Ç</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>                                   
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="wordle.html">Wordle
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="calculator.html">Hesap Makinesi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bingo.html">Bingo Oyunu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="guess.html">Sayı Tahmin Oyunu</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="about.html">Hakkımda</a>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- navbar finish -->
+<br>
+<main>
+<div class="container">
+	<h1>Wordle Oyunu</h1>
+	
+	<p>Lütfen tahmin yaptığınız kelimenin tüm harflerini büyük yazın.</p>
+	
+	<button type="submit" class="btn btn-primary" id="newgame"> Yeni Oyun Başlat</button>
+	<br><br>
+	<div class="form-group">
+      <label > Tahminini Gir: </label>
+      <input type="text" id="guess">
+	  <button type="button" class="btn btn-primary" id="check">Kontrol Et</button>
+	</div>
+	<br>
+	<div>
+		<div class="containeritems">
+			<button type="button" class="btn btn-secondary wordleitem" id="one0" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem"  id="one1" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem"  id="one2" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem"  id="one3" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem"  id="one4" disabled></button>
+		</div>
+		<br>
+		<div class="containeritems">
+			<button type="button" class="btn btn-secondary wordleitem"  id="two0" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="two1" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="two2" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="two3" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="two4" disabled></button>
+		</div>
+		<br>
+		<div class="containeritems">
+			<button type="button" class="btn btn-secondary wordleitem" id="three0" disabled ></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="three1" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="three2" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="three3" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="three4" disabled></button>
+		</div>
+		<br>
+		<div class="containeritems">
+			<button type="button" class="btn btn-secondary wordleitem" id="four0" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="four1" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="four2" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="four3" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="four4" disabled></button>
+		</div>
+		<br>
+		<div class="containeritems">
+			<button type="button" class="btn btn-secondary wordleitem" id="five0" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="five1"disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem"  id="five2" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem"  id="five3" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem"  id="five4" disabled></button>
+		</div>
+		<br>
+		<div class="containeritems">
+			<button type="button" class="btn btn-secondary wordleitem"  id="six0" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem" id="six1" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem"  id="six2" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem"  id="six3" disabled></button>
+			<button type="button" class="btn btn-secondary wordleitem"  id="six4"  disabled></button>
+		</div>
+	</div>
+	<br>
+	<p id="winlose"></p>
+	<br> 
+	<div>
+		<div class="letterstate">
+			<button type="button" class="btn btn-secondary" id="A" disabled >A</button>
+			<button type="button" class="btn btn-secondary" id="B" disabled >B</button>
+			<button type="button" class="btn btn-secondary" id="C" disabled >C</button>
+			<button type="button" class="btn btn-secondary" id="Ç"disabled >Ç</button>
+			<button type="button" class="btn btn-secondary" id="D" disabled>D</button>
+			<button type="button" class="btn btn-secondary" id="E" disabled>E</button>
+			<button type="button" class="btn btn-secondary" id="F" disabled>F</button>
+			<button type="button" class="btn btn-secondary" id="G" disabled>G</button>
+			<button type="button" class="btn btn-secondary" id="Ğ" disabled>Ğ</button>
+			<button type="button" class="btn btn-secondary" id="H" disabled>H</button>
+			<button type="button" class="btn btn-secondary" id="I" disabled>I</button>
+			<button type="button" class="btn btn-secondary" id="İ" disabled>İ</button>
+			<button type="button" class="btn btn-secondary" id="J" disabled>J</button>
+			<button type="button" class="btn btn-secondary" id="K" disabled>K</button>
+			<button type="button" class="btn btn-secondary" id="L" disabled>L</button>	
+		</div>
+		<br>
+		<div class="letterstate">
+			<button type="button" class="btn btn-secondary" id="M" disabled>M</button>
+			<button type="button" class="btn btn-secondary"id="N" disabled>N</button>	
+			<button type="button" class="btn btn-secondary" id="O" disabled>O</button>
+			<button type="button" class="btn btn-secondary" id="Ö" disabled>Ö</button>
+			<button type="button" class="btn btn-secondary" id="P" disabled>P</button>
+			<button type="button" class="btn btn-secondary" id="R" disabled>R</button>
+			<button type="button" class="btn btn-secondary" id="S" disabled>S</button>
+			<button type="button" class="btn btn-secondary" id="Ş" disabled>Ş</button>
+			<button type="button" class="btn btn-secondary" id="T" disabled>T</button>
+			<button type="button" class="btn btn-secondary" id="U" disabled>U</button>
+			<button type="button" class="btn btn-secondary" id="Ü" disabled>Ü</button>
+			<button type="button" class="btn btn-secondary" id="V" disabled>V</button>
+			<button type="button" class="btn btn-secondary" id="Y" disabled>Y</button>
+			<button type="button" class="btn btn-secondary"" id="Z" disabled>Z</button>
+			
+		</div>
+	</div>
+	<br><br>
+</div>
+</main>
+<script src="script/wordle.js"></script>
+</body>
+</html>

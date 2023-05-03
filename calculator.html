@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title>Hesap Makinesi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="styles/calculator.css">
+</head>
+<body>
+<main>
+<!-- navbar start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Hatice Ç</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>                                   
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="wordle.html">Wordle
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="calculator.html">Hesap Makinesi
+			   <span class="visually-hidden">(current)</span>
+		</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bingo.html">Bingo Oyunu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="guess.html">Sayı Tahmin Oyunu</a>
+        </li> 
+		<li class="nav-item">
+          <a class="nav-link" href="about.html">Hakkımda</a>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- navbar finish -->
+<br>
+<div class="container">
+<h1> Hesap Makinesi</h1>
+<p> Kesin bu işlemi daha kısa yapmanın yolları vardır ama neyse kendi yolumuzdan yapalım hesap kitap işini</p>
+<form>
+  <fieldset >
+  <div class="container-calculator">
+  <div class="calculator-items">
+    <div class="form-group">
+      <label > Sayı 1 </label>
+      <input type="number" class="form-control" id="one" >
+     
+    </div>
+    <div class="form-group">
+      <label > Sayı 2 </label>
+      <input type="number" class="form-control" id="two">
+    </div>
+  </div>
+  </div>
+  <br>
+  <div>
+    <button type="button" class="change btn btn-info" id="plus">Topla</button>
+	<button type="button"  class="change btn btn-info" id="minus">Çıkar</button>
+	<button type="button"  class="change btn btn-info" id="multipliedby">Çarp</button>
+	<button type="button" class=" change btn btn-info" id="divide">Böl</button>
+</div>
+<br>
+<div>
+    <button type="button" class="change btn btn-success" id="evenodd">Çift/Tek</button>
+	<button type="button"  class="change btn btn-success" id="between">Arada kalan tüm sayılar</button>
+	<button type="button"  class="change btn btn-success" id="nrandom">Aralıktan random sayı seç</button>
+</div>
+<br>
+<div>
+    <button type="button" class="btn btn-dark" id="changecolor">Buton renklerini tersine çevir</button>
+</div>
+<br>
+<br>
+<div>
+	<p id="calculator-label"></p>
+	<p id="calculator-result"></p>
+</div>
+  </fieldset>
+</form>
+</div>
+</main>
+<script src="script/calculator.js"></script>
+</body>
+</html>
